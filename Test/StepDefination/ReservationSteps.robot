@@ -145,7 +145,6 @@ User fills card details textboxes
 User must able to see total amount
     Page Should Contain Element    ${TotalAmount}
 
-
 User must able to see "Rezervasyon Yap" button
     Mouse Over    ${CreateBookingButton}
     Page Should Contain Element    ${CreateBookingButton}
