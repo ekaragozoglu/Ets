@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220226 21:46:11.931" rpa="false" schemaversion="2">
+<suite id="s1" name="HotelReservation" source="C:\Users\e_kar\Desktop\ets\Test\TestCases\HotelReservation.robot">
+<test id="s1-t1" name="Create single room reservation with card- Include BB">
+<kw name="User goes to ETSTur home page" library="ReservationSteps">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220226 21:46:12.349" endtime="20220226 21:46:12.349"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220226 21:46:12.349" endtime="20220226 21:46:12.350"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_argument("--incognito")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220226 21:46:12.351" level="INFO">Opening browser 'chrome' to base url 'https://www.etstur.com/'.</msg>
+<status status="PASS" starttime="20220226 21:46:12.350" endtime="20220226 21:46:16.594"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1680</arg>
+<arg>1050</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20220226 21:46:16.594" endtime="20220226 21:46:16.723"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220226 21:46:16.724" endtime="20220226 21:46:16.847"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:18.850" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:16.848" endtime="20220226 21:46:18.850"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220226 21:46:18.850" endtime="20220226 21:46:18.850"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220226 21:46:18.850" endtime="20220226 21:46:18.866"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:12.348" endtime="20220226 21:46:18.866"/>
+</kw>
+<kw name="User must able to see &quot;Nereye gitmek istersin?&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:18.874" endtime="20220226 21:46:18.891"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:21.907" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:18.892" endtime="20220226 21:46:21.907"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:18.866" endtime="20220226 21:46:21.907"/>
+</kw>
+<kw name="User must able to see &quot;Giriş Tarihi&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:21.909" endtime="20220226 21:46:21.936"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:24.943" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:21.936" endtime="20220226 21:46:24.943"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:21.907" endtime="20220226 21:46:24.943"/>
+</kw>
+<kw name="User must able to see &quot;Çıkış Tarihi&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:24.945" endtime="20220226 21:46:24.966"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:27.970" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:24.966" endtime="20220226 21:46:27.970"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:24.943" endtime="20220226 21:46:27.970"/>
+</kw>
+<kw name="User must able to see &quot;ARA&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:27.972" endtime="20220226 21:46:27.990"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:31.005" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:27.991" endtime="20220226 21:46:31.005"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:27.970" endtime="20220226 21:46:31.005"/>
+</kw>
+<kw name="User closes pop up if exist" library="ReservationSteps">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${present}</var>
+<arg>Page Should Contain Element</arg>
+<arg>${ClosePopUpButton}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${ClosePopUpButton}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:46:31.029" level="INFO">Current page contains element 'xpath=//button[@class='mfp-close wis-mfp-close-150878']'.</msg>
+<status status="PASS" starttime="20220226 21:46:31.008" endtime="20220226 21:46:31.029"/>
+</kw>
+<msg timestamp="20220226 21:46:31.029" level="INFO">${present} = True</msg>
+<status status="PASS" starttime="20220226 21:46:31.007" endtime="20220226 21:46:31.029"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${present}'=='True'</arg>
+<arg>Close popup</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Close popup" library="ReservationSteps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopUpButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:31.031" level="INFO">Clicking element 'xpath=//button[@class='mfp-close wis-mfp-close-150878']'.</msg>
+<status status="PASS" starttime="20220226 21:46:31.030" endtime="20220226 21:46:31.094"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:31.030" endtime="20220226 21:46:31.094"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:31.029" endtime="20220226 21:46:31.094"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:31.006" endtime="20220226 21:46:31.094"/>
+</kw>
+<kw name="User fills search textbox with &quot;Marmaris&quot; and select region" library="ReservationSteps" sourcename="User fills search textbox with &quot;${InputText}&quot; and select region">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:31.096" level="INFO">Clicking element 'xpath=//input[@id="tb-autocomplete"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:31.095" endtime="20220226 21:46:31.740"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchTextbox}</arg>
+<arg>${InputText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:31.741" level="INFO">Typing text 'Marmaris' into text field 'xpath=//input[@id="tb-autocomplete"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:31.741" endtime="20220226 21:46:31.836"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:33.840" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:31.837" endtime="20220226 21:46:33.840"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${SelectFirstChoice}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:46:33.840" level="INFO">Simulating Mouse Over on element 'xpath=//form[@id="sf-hotelSearchForm"]//li[1]'.</msg>
+<status status="PASS" starttime="20220226 21:46:33.840" endtime="20220226 21:46:34.128"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectFirstChoice}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:34.128" level="INFO">Clicking element 'xpath=//form[@id="sf-hotelSearchForm"]//li[1]'.</msg>
+<status status="PASS" starttime="20220226 21:46:34.128" endtime="20220226 21:46:34.186"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:36.203" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:34.187" endtime="20220226 21:46:36.203"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:31.095" endtime="20220226 21:46:36.203"/>
+</kw>
+<kw name="User selects check in and check out date" library="ReservationSteps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CheckInDate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:36.206" level="INFO">Clicking element 'xpath=//div[@id="checkIn"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:36.205" endtime="20220226 21:46:36.332"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:38.338" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:36.332" endtime="20220226 21:46:38.338"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${CheckInDate}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:46:38.338" level="INFO">Simulating Mouse Over on element 'xpath=//div[@id="checkIn"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:38.338" endtime="20220226 21:46:38.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectChecInDate19}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:38.618" level="INFO">Clicking element 'xpath=//form[@id="sf-hotelSearchForm"]//td[@class='weekend'][contains(text(),' 19 ')]'.</msg>
+<status status="PASS" starttime="20220226 21:46:38.618" endtime="20220226 21:46:38.725"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:40.732" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:38.725" endtime="20220226 21:46:40.732"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${SelectCheckOutDate25}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:46:40.733" level="INFO">Simulating Mouse Over on element 'xpath=(//form[@id="sf-hotelSearchForm"]//td[contains(text(),' 25 ')])[2]'.</msg>
+<status status="PASS" starttime="20220226 21:46:40.732" endtime="20220226 21:46:41.058"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectCheckOutDate25}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:41.059" level="INFO">Clicking element 'xpath=(//form[@id="sf-hotelSearchForm"]//td[contains(text(),' 25 ')])[2]'.</msg>
+<status status="PASS" starttime="20220226 21:46:41.059" endtime="20220226 21:46:41.112"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:36.204" endtime="20220226 21:46:41.112"/>
+</kw>
+<kw name="User must able to see total accommodation day" library="ReservationSteps">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Gece</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220226 21:46:41.137" level="INFO">Current page contains text 'Gece'.</msg>
+<status status="PASS" starttime="20220226 21:46:41.114" endtime="20220226 21:46:41.137"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:43.141" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:41.137" endtime="20220226 21:46:43.141"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:41.113" endtime="20220226 21:46:43.141"/>
+</kw>
+<kw name="User selects number of guests as single" library="ReservationSteps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NumberOfGuestButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:43.142" level="INFO">Clicking element 'xpath=//div[@class="col-lg-7 search-bottom"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:43.142" endtime="20220226 21:46:43.202"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:45.215" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:43.202" endtime="20220226 21:46:45.215"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Yetişkin Sayısı</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220226 21:46:45.231" level="INFO">Current page contains text 'Yetişkin Sayısı'.</msg>
+<status status="PASS" starttime="20220226 21:46:45.215" endtime="20220226 21:46:45.231"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Çocuk Sayısı</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220226 21:46:45.246" level="INFO">Current page contains text 'Çocuk Sayısı'.</msg>
+<status status="PASS" starttime="20220226 21:46:45.231" endtime="20220226 21:46:45.246"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectMinusOnAdult}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:45.246" level="INFO">Clicking element 'xpath=(//button[@data-type="minus"])[1]'.</msg>
+<status status="PASS" starttime="20220226 21:46:45.246" endtime="20220226 21:46:45.315"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220226 21:46:45.333" level="INFO">Current page contains text '1'.</msg>
+<status status="PASS" starttime="20220226 21:46:45.315" endtime="20220226 21:46:45.333"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:47.342" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:45.333" endtime="20220226 21:46:47.342"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:43.141" endtime="20220226 21:46:47.342"/>
+</kw>
+<kw name="User clicks &quot;Ara&quot; button" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${SearchButton}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:46:47.345" level="INFO">Simulating Mouse Over on element 'xpath=//button[@type="button"][contains(text(),'ARA')]'.</msg>
+<status status="PASS" starttime="20220226 21:46:47.342" endtime="20220226 21:46:47.638"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:47.638" level="INFO">Clicking element 'xpath=//button[@type="button"][contains(text(),'ARA')]'.</msg>
+<status status="PASS" starttime="20220226 21:46:47.638" endtime="20220226 21:46:50.122"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:47.342" endtime="20220226 21:46:50.122"/>
+</kw>
+<kw name="User must able to see &quot;Sonuçları Filtrele&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:50.123" endtime="20220226 21:46:50.210"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:46:53.220" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:50.211" endtime="20220226 21:46:53.220"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:50.123" endtime="20220226 21:46:53.220"/>
+</kw>
+<kw name="User selects hotel from list" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${SelectHotel7}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:46:53.223" level="INFO">Simulating Mouse Over on element 'xpath=(//div[@class="search-img-content"])[7]'.</msg>
+<status status="PASS" starttime="20220226 21:46:53.223" endtime="20220226 21:46:53.541"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectHotel7}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:53.541" level="INFO">Clicking element 'xpath=(//div[@class="search-img-content"])[7]'.</msg>
+<status status="PASS" starttime="20220226 21:46:53.541" endtime="20220226 21:46:53.656"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:53.220" endtime="20220226 21:46:53.656"/>
+</kw>
+<kw name="User must able to see selected hotel name on page" library="ReservationSteps">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220226 21:46:53.658" endtime="20220226 21:46:53.672"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SelectedHotelName}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:53.673" endtime="20220226 21:46:55.909"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${SelectedHotelName}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:46:55.919" level="INFO">Current page contains element 'xpath=//div[@class="hotel-name"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:55.909" endtime="20220226 21:46:55.919"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:53.657" endtime="20220226 21:46:55.920"/>
+</kw>
+<kw name="User must able to see room types and prices" library="ReservationSteps">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${RoomCards}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:46:55.942" level="INFO">Current page contains element 'xpath=//div[@class="room-card"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:55.921" endtime="20220226 21:46:55.942"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${RoomPrices}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:46:55.958" level="INFO">Current page contains element 'xpath=//span[@class="total-room-price"]'.</msg>
+<status status="PASS" starttime="20220226 21:46:55.943" endtime="20220226 21:46:55.958"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:55.920" endtime="20220226 21:46:55.958"/>
+</kw>
+<kw name="User selects standart room with BB" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${StandartRoomBB}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:46:55.960" level="INFO">Simulating Mouse Over on element 'xpath=(//a[@title="Odayı Seç"])[1]'.</msg>
+<status status="PASS" starttime="20220226 21:46:55.959" endtime="20220226 21:46:56.246"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${StandartRoomBB}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:46:56.246" level="INFO">Clicking element 'xpath=(//a[@title="Odayı Seç"])[1]'.</msg>
+<status status="PASS" starttime="20220226 21:46:56.246" endtime="20220226 21:46:56.366"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:55.959" endtime="20220226 21:46:56.366"/>
+</kw>
+<kw name="User must able to see &quot;KİŞİ BİLGİLERİ&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:46:56.368" endtime="20220226 21:46:58.430"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:01.443" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:46:58.431" endtime="20220226 21:47:01.443"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:56.367" endtime="20220226 21:47:01.443"/>
+</kw>
+<kw name="User must able to see &quot;ÖDEME&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:47:01.447" endtime="20220226 21:47:01.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:04.482" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:47:01.475" endtime="20220226 21:47:04.482"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:01.446" endtime="20220226 21:47:04.482"/>
+</kw>
+<kw name="User must able to see &quot;REZERVASYON TAMAM!&quot; text on page" library="ReservationSteps" sourcename="User must able to see &quot;${InputText}&quot; text on page">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${InputText}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220226 21:47:04.485" endtime="20220226 21:47:04.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:07.514" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220226 21:47:04.511" endtime="20220226 21:47:07.514"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:04.482" endtime="20220226 21:47:07.514"/>
+</kw>
+<kw name="User selects gender as male" library="ReservationSteps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectGenderMale}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:07.517" level="INFO">Clicking element 'xpath=(//div[@class="form-check"])[2]'.</msg>
+<status status="PASS" starttime="20220226 21:47:07.517" endtime="20220226 21:47:07.601"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:07.514" endtime="20220226 21:47:07.601"/>
+</kw>
+<kw name="User fills guest information textboxes" library="ReservationSteps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NameTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:07.604" level="INFO">Clicking element 'xpath=//input[@id="tb-name_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:07.603" endtime="20220226 21:47:07.674"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${NameTextbox}</arg>
+<arg>Mehmet</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:07.675" level="INFO">Typing text 'Mehmet' into text field 'xpath=//input[@id="tb-name_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:07.675" endtime="20220226 21:47:07.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:08.756" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:07.751" endtime="20220226 21:47:08.756"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SurnameTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:08.756" level="INFO">Clicking element 'xpath=//input[@id="tb-surname_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:08.756" endtime="20220226 21:47:08.834"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SurnameTextbox}</arg>
+<arg>Yıldırım</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:08.835" level="INFO">Typing text 'Yıldırım' into text field 'xpath=//input[@id="tb-surname_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:08.834" endtime="20220226 21:47:08.930"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:09.938" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:08.930" endtime="20220226 21:47:09.938"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BirthdayTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:09.938" level="INFO">Clicking element 'xpath=//input[@id="tb-birthdate_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:09.938" endtime="20220226 21:47:10.019"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${BirthdayTextbox}</arg>
+<arg>31051980</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:10.020" level="INFO">Typing text '31051980' into text field 'xpath=//input[@id="tb-birthdate_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:10.020" endtime="20220226 21:47:10.102"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:11.106" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:10.102" endtime="20220226 21:47:11.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EmailTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:11.106" level="INFO">Clicking element 'xpath=//input[@id="tb-email_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:11.106" endtime="20220226 21:47:11.178"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailTextbox}</arg>
+<arg>e4@mail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:11.179" level="INFO">Typing text 'e4@mail.com' into text field 'xpath=//input[@id="tb-email_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:11.178" endtime="20220226 21:47:11.277"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:12.289" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:11.277" endtime="20220226 21:47:12.289"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${GsmTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:12.289" level="INFO">Clicking element 'xpath=//input[@id="contactFormPhoneNumber-g1"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:12.289" endtime="20220226 21:47:12.392"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${GsmTextbox}</arg>
+<arg>5431073587</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:12.393" level="INFO">Typing text '5431073587' into text field 'xpath=//input[@id="contactFormPhoneNumber-g1"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:12.393" endtime="20220226 21:47:12.502"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:13.505" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:12.503" endtime="20220226 21:47:13.505"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IdCardTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:13.505" level="INFO">Clicking element 'xpath=//input[@id="tckn_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:13.505" endtime="20220226 21:47:13.567"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IdCardTextbox}</arg>
+<arg>55317222850</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:13.568" level="INFO">Typing text '55317222850' into text field 'xpath=//input[@id="tckn_0_0"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:13.567" endtime="20220226 21:47:13.663"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:14.667" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:13.663" endtime="20220226 21:47:14.667"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:07.602" endtime="20220226 21:47:14.667"/>
+</kw>
+<kw name="User clicks continue to purchase button" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${ContinueToPurchase}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:47:14.670" level="INFO">Simulating Mouse Over on element 'xpath=//button[@id="btn-preBook"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:14.669" endtime="20220226 21:47:14.973"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ContinueToPurchase}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:14.974" level="INFO">Clicking element 'xpath=//button[@id="btn-preBook"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:14.973" endtime="20220226 21:47:15.047"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:14.667" endtime="20220226 21:47:15.048"/>
+</kw>
+<kw name="User must able to see payment methods with &quot;KART İLE ÖDE&quot;, &quot;GARANTİ PAY&quot;, &quot;KOLAY HAVALE&quot; and &quot;PAYCELL&quot;" library="ReservationSteps">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${PaymentMethodsField}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:47:17.357" level="INFO">Current page contains element 'xpath=//div[@id="paymentMethods"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:15.049" endtime="20220226 21:47:17.357"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:18.373" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:17.358" endtime="20220226 21:47:18.373"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:15.048" endtime="20220226 21:47:18.373"/>
+</kw>
+<kw name="User selects payment type as card" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${PayWithCard}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:47:18.377" level="INFO">Simulating Mouse Over on element 'xpath=//div[@id="heading-CREDITCARD"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:18.376" endtime="20220226 21:47:18.670"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PayWithCard}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:18.671" level="INFO">Clicking element 'xpath=//div[@id="heading-CREDITCARD"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:18.670" endtime="20220226 21:47:18.748"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:18.373" endtime="20220226 21:47:18.749"/>
+</kw>
+<kw name="User must able to see card detail box" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${CardDetailBox}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:47:18.751" level="INFO">Simulating Mouse Over on element 'xpath=(//div[@class="payment-area payment-card"])[1]'.</msg>
+<status status="PASS" starttime="20220226 21:47:18.750" endtime="20220226 21:47:19.091"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${CardDetailBox}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:47:19.099" level="INFO">Current page contains element 'xpath=(//div[@class="payment-area payment-card"])[1]'.</msg>
+<status status="PASS" starttime="20220226 21:47:19.091" endtime="20220226 21:47:19.099"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:18.750" endtime="20220226 21:47:19.099"/>
+</kw>
+<kw name="User fills card details textboxes" library="ReservationSteps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CardOwnerNameTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:19.101" level="INFO">Clicking element 'xpath=//input[@id="creditCardOwnerName"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:19.101" endtime="20220226 21:47:19.166"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CardOwnerNameTextbox}</arg>
+<arg>Mehmet Yıldırım</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:19.167" level="INFO">Typing text 'Mehmet Yıldırım' into text field 'xpath=//input[@id="creditCardOwnerName"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:19.166" endtime="20220226 21:47:19.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:20.327" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:19.317" endtime="20220226 21:47:20.327"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CardNumberTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:20.327" level="INFO">Clicking element 'xpath=//input[@id="tb-creditCardNumber"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:20.327" endtime="20220226 21:47:20.405"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CardNumberTextbox}</arg>
+<arg>4797188119191923</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:20.406" level="INFO">Typing text '4797188119191923' into text field 'xpath=//input[@id="tb-creditCardNumber"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:20.406" endtime="20220226 21:47:20.790"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:21.814" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:20.790" endtime="20220226 21:47:21.814"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CardValidMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:21.814" level="INFO">Clicking element 'xpath=//select[@name="creditCardValidMonth"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:21.814" endtime="20220226 21:47:21.899"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:22.913" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:21.899" endtime="20220226 21:47:22.913"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectValidMonth12}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:22.913" level="INFO">Clicking element 'xpath=//option[@value="12"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:22.913" endtime="20220226 21:47:22.965"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:23.990" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:22.965" endtime="20220226 21:47:23.990"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CardValidYearButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:23.990" level="INFO">Clicking element 'xpath=//select[@name="creditCardValidYear"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:23.990" endtime="20220226 21:47:24.079"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:25.088" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:24.079" endtime="20220226 21:47:25.088"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectValidYear25}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:25.088" level="INFO">Clicking element 'xpath=//option[@value="25"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:25.088" endtime="20220226 21:47:25.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:26.144" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:25.144" endtime="20220226 21:47:26.144"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CvcTextbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:26.144" level="INFO">Clicking element 'xpath=//input[@name="creditCardCVC"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:26.144" endtime="20220226 21:47:26.223"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CvcTextbox}</arg>
+<arg>666</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220226 21:47:26.223" level="INFO">Typing text '666' into text field 'xpath=//input[@name="creditCardCVC"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:26.223" endtime="20220226 21:47:26.289"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:27.298" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220226 21:47:26.290" endtime="20220226 21:47:27.298"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:19.100" endtime="20220226 21:47:27.298"/>
+</kw>
+<kw name="User must able to see total amount" library="ReservationSteps">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${TotalAmount}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:47:27.313" level="INFO">Current page contains element 'xpath=//span[@class="installment-total-amount"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:27.300" endtime="20220226 21:47:27.313"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:27.298" endtime="20220226 21:47:27.313"/>
+</kw>
+<kw name="User must able to see &quot;Rezervasyon Yap&quot; button" library="ReservationSteps">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${CreateBookingButton}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220226 21:47:27.315" level="INFO">Simulating Mouse Over on element 'xpath=//button[@id="btn-book"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:27.314" endtime="20220226 21:47:27.600"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${CreateBookingButton}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220226 21:47:27.600" level="INFO">Current page contains element 'xpath=//button[@id="btn-book"]'.</msg>
+<status status="PASS" starttime="20220226 21:47:27.600" endtime="20220226 21:47:27.600"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220226 21:47:32.602" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220226 21:47:27.600" endtime="20220226 21:47:32.602"/>
+</kw>
+<status status="PASS" starttime="20220226 21:47:27.314" endtime="20220226 21:47:32.602"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220226 21:47:32.602" endtime="20220226 21:47:34.896"/>
+</kw>
+<status status="PASS" starttime="20220226 21:46:12.347" endtime="20220226 21:47:34.896"/>
+</test>
+<status status="PASS" starttime="20220226 21:46:11.931" endtime="20220226 21:47:34.899"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="HotelReservation">HotelReservation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
